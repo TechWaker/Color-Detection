@@ -10,7 +10,7 @@ h5py==2.10.0
 idna==2.9
 imageai==2.1.5
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==3.0
 joblib==0.16.0
 jsonify==0.5
 kiwisolver==1.2.0
