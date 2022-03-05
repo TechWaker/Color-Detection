@@ -50,8 +50,8 @@ def upload():
         mask_image = cv2.inRange(hsv_image, lowerColor,upperColor)
         final_image = cv2.bitwise_and(image,image,mask=mask_image)
 
-        cv2.imwrite(os.path.join(folder,filename),hsv_image)
-        #cv2.imwrite(os.path.join(folder,filename),mask_image)
+        #cv2.imwrite(os.path.join(folder,filename),hsv_image)
+        cv2.imwrite(os.path.join(folder,filename),mask_image)
         #cv2.imwrite(os.path.join(folder,filename),final_image)
 
         return redirect(url_for('uploaded_file',filename=filename))
